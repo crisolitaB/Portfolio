@@ -29,11 +29,13 @@
        overflow-x: scroll; /* Enable horizontal scrolling */
        gap: 10px; /* Add some spacing between images */
        white-space: nowrap; /* Prevent images from wrapping to the next line */
+       width: 50%; /* take uo half the screen width*/
    }
 
    .scroll-container img {
        max-width: 100%; /* Ensure images fit within the container */
        height: auto;
+       aspect-ratio: 1/1; /* maintain a 1:1 aspect ratio*/
    }
 </style>
 </head>

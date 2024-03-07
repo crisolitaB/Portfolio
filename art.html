@@ -14,6 +14,27 @@
     padding: 10px;
     text-align: center;
     }
+    body {
+       display: flex;
+       font-family: 'Roboto Mono', monospace;
+       justify-content: center; /* Center the gallery horizontally */
+       align-items: center; /* Center vertically */
+       height: 100vh; /* Full viewport height */
+       margin: 0;
+       background-color: #f0f0f0; /* Set a background color */
+   }
+
+   .scroll-container {
+       display: flex;
+       overflow-x: scroll; /* Enable horizontal scrolling */
+       gap: 10px; /* Add some spacing between images */
+       white-space: nowrap; /* Prevent images from wrapping to the next line */
+   }
+
+   .scroll-container img {
+       max-width: 100%; /* Ensure images fit within the container */
+       height: auto;
+   }
 </style>
 </head>
 
@@ -27,6 +48,13 @@
     </div>
     <h1>Crisol Beliz</h1>
     <p>*i make cool things*</p>
+    <div class="scroll-container">
+        <img src="tlateloco.jpg" alt="Cinque Terre">
+        <img src="collage.jpg" alt="Forest">
+        <img src="bad_bunny.jpg" alt="Northern Lights">
+        <img src="nautilus.jpg" alt="Mountains">
+    </div>
+    
 </body>
 
 </html>

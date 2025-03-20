@@ -8,10 +8,10 @@ var poems = [
     "As it has been said:<br>Love and a cough<br>cannot be concealed.<br>Even a small cough.<br>Even a small love.<br>-Small Wire by Anne Sexton",
     "Tell me, what is it you plan to do<br>with your one wild and precious life?<br>-The Summer Day by Mary Oliver",
     "Resist much, obey little;<br>-Caution by Walt Whitman",
-    "so much depends <br>upon<br> a red wheel <br>barrow <br>glazed with rain<br> water <br>beside the white <br>chickens<br> The Red Wheelbarrow by William Carlos Williams",
-    "The art of losing isn’t hard to master;<br>so many things seem filled with the intent<br>to be lost that their loss is no disaster... One Art by Elizabeth Bishop",
-    "i carry your heart with me(i carry it in<br>my heart)i am never without it(anywhere<br>i go you go,my dear;and whatever is done<br>by only me is your doing,my darling)<br> [i carry your heart with me(i carryitin] by e.e. cummings",
-    "Tyger Tyger, burning bright, <br>In the forests of the night; <br>What immortal hand or eye, <br>Could frame thy fearful symmetry?<br> The Tyger by William Blake",
+    "so much depends <br>upon<br> a red wheel <br>barrow <br>glazed with rain<br> water <br>beside the white <br>chickens<br> -The Red Wheelbarrow by William Carlos Williams",
+    "The art of losing isn’t hard to master;<br>so many things seem filled with the intent<br>to be lost that their loss is no disaster...<br> -One Art by Elizabeth Bishop",
+    "i carry your heart with me(i carry it in<br>my heart)i am never without it(anywhere<br>i go you go,my dear;and whatever is done<br>by only me is your doing,my darling)<br> -[i carry your heart with me(i carryitin] by e.e. cummings",
+    "Tyger Tyger, burning bright, <br>In the forests of the night; <br>What immortal hand or eye, <br>Could frame thy fearful symmetry?<br> -The Tyger by William Blake",
     
 
 ]

@@ -1,43 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Homepage</title>
+<title>Crisol Beliz Bouwens</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-<style>
-    #profile {
-          border-radius: 50%;
-        }
-    body { font-family: 'Roboto Mono', monospace;
-    margin-left: 25%;
-    margin-right: 25%;
-    padding: 10px;
-    text-align: center;
-    }
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!-- External CSS -->
+<link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
-    <div class="nav-menu">
+
+       <header class="top-bar">
+    <div class="site-name">
+        Crisol <span class="sparkle">✧</span>
+    </div>
+
+    <nav class="nav-menu">
         <a href="index.html" class="active">home</a>
         <a href="resume.html">resume</a>
         <a href="projects.html">projects</a>
-        <a href="poetry.html">inspiration</a>
         <a href="contact.html">contact</a>
-    </div>
-    <h1>Crisol Beliz Bouwens</h1>
-    <h2>about me</h2>
-    <img src="profile.jpg"  id="profile" alt="Avatar" style="width:200px">
-    <p>Hello there! My name is Crisol (I also go by Cris), welcome to my site! 
+    </nav>
+</header>
+
+<main class="hero">
+    <section class="hero-text">
+        <h1>Crisol Beliz Bouwens</h1>
+        <h2>about me</h2>
+        <p>Hello there! My name is Crisol (I also go by Cris), welcome to my site! 
         I'm a bookworm who loves speculative fiction and horror. 
         I'm also a proud mom, a tea enthusiast, and I have a passion for research and advocacy. 
         Feel free to look at my resume, check out some projects I have worked on, get inspired by a little poem, 
-        or send me a message. Thanks for stopping by!
-</p>
+        or send me a message. Thanks for stopping by!</p>
+    </section>
+
+    <section class="hero-image">
+        <div class="image-frame">
+            <div class="image-border"></div>
+            <img src="profile.jpg" id="profile" alt="Avatar">
+        </div>
+    </section>
+</main>
+
+
+    <div class="sparkles"></div>
+<div class="floating-sparkle sparkle-one">✧</div>
+<div class="floating-sparkle sparkle-two">✧</div>
+
+
 </body>
-
-
 </html>

@@ -1,0 +1,242 @@
+/* -----------------------------------
+   COLOR SYSTEM
+----------------------------------- */
+:root {
+  --dark-green: #0f2f2a;
+  --lime: #c8ff7a;
+}
+
+/* -----------------------------------
+   GLOBAL
+----------------------------------- */
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--dark-green);
+  color: var(--lime);
+  font-family: 'Inter', sans-serif;
+}
+
+
+h1, h2, .site-name {
+  font-family: 'Forum', serif;
+}
+
+
+/* -----------------------------------
+   TOP BAR
+----------------------------------- */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 10%;
+}
+
+.site-name {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* -----------------------------------
+   RESUME PAGE CONTENT ALIGNMENT
+----------------------------------- */
+.resume-content {
+  padding: 4rem 10%;
+}
+
+.resume-body {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Clean elongated sparkle */
+.sparkle {
+  font-size: 1.6rem;
+  color: var(--lime);
+  font-family: 'Forum', serif;
+  letter-spacing: 1px;
+}
+
+/* -----------------------------------
+   NAVIGATION
+----------------------------------- */
+.nav-menu {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: var(--lime);
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.nav-menu a.active {
+  text-decoration: underline;
+}
+
+/* -----------------------------------
+   NAVIGATION HOVER GLOW
+----------------------------------- */
+.nav-menu a {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: var(--lime);
+  transition: width 0.3s ease;
+}
+
+.nav-menu a:hover {
+  color: var(--lime);
+}
+
+.nav-menu a:hover::after {
+  width: 100%;
+}
+
+/* -----------------------------------
+   HERO SECTION
+----------------------------------- */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 10%;
+}
+
+.hero-text {
+  max-width: 45%;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-text h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-text p {
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+/* -----------------------------------
+   PROFILE IMAGE
+----------------------------------- */
+.hero-image {
+  position: relative;
+}
+
+.image-frame {
+  position: relative;
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Floating lime border */
+.image-border {
+  position: absolute;
+  width: 360px;
+  height: 360px;
+  border: 2px solid var(--lime);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+#profile {
+  width: 340px;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+}
+
+
+/* -----------------------------------
+   REMOVE ALL OTHER SPARKLES
+----------------------------------- */
+.sparkles {
+  display: none;
+}
+
+/* -----------------------------------
+   RESUME PAGE CONTENT ALIGNMENT
+----------------------------------- */
+.resume-content {
+  padding: 4rem 10%;
+  display: flex;
+  justify-content: center;
+}
+
+.resume-body {
+  max-width: 800px;
+  line-height: 1.6;
+}
+
+
+
+
+/* -----------------------------------
+   FLOATING SPARKLES (Larger DESKTOP, SMALL MOBILE)
+----------------------------------- */
+.floating-sparkle {
+  position: fixed;
+  color: var(--lime);
+  font-family: 'Forum', serif;
+  opacity: 0.45;
+  pointer-events: none;
+  animation: floatSparkle 14s ease-in-out infinite;
+
+  /* Responsive sizing:
+     - Minimum: 1.8rem (mobile)
+     - Scales with viewport width: 5vw
+     - Maximum: 4.2rem (desktop nickel size)
+  */
+  font-size: clamp(1.8rem, 5vw, 4.2rem);
+
+  z-index: 0;
+}
+
+.sparkle-one {
+  top: 18%;
+  left: 10%;
+}
+
+.sparkle-two {
+  bottom: 20%;
+  right: 12%;
+}
+
+@keyframes floatSparkle {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-25px) rotate(10deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+
+
+
+
